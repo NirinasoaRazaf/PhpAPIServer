@@ -34,7 +34,7 @@ use \Firebase\JWT\JWT;
         }
           // Nombre admin
           public function getNombreAdmin(){
-            $sqlQuery = "SELECT * FROM nombreAdmin";
+            $sqlQuery = "SELECT * FROM nombreadmin";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;
