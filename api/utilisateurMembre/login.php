@@ -23,7 +23,7 @@ $data = json_decode(file_get_contents("php://input"));
 $email = $data->email;
 $motdepasse = $data->motdepasse;
 
-$table_name = 'utilisateurMembre';
+$table_name = 'UtilisateurMembre';
 
 $query = "SELECT  * FROM " . $table_name . " WHERE email = ? LIMIT 0,1";
 
