@@ -38,13 +38,13 @@
             return $stmt;
         }
         public function getFicheOuvrages(){
-            $sqlQuery = "SELECT * FROM  ficheOuvrage order by created desc";
+            $sqlQuery = "SELECT * FROM  ficheouvrage order by created desc";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;
         }
         public function getFicheOuvragesApa(){
-            $sqlQuery = "SELECT * FROM  ficheOuvrage order by nomAuteur";
+            $sqlQuery = "SELECT * FROM  ficheouvrage order by nomAuteur";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;
