@@ -66,7 +66,7 @@
         }
         //le plus lu
         public function ouvrageParLangue(){
-            $sqlQuery = "SELECT * FROM  ouvrageParLangue ";
+            $sqlQuery = "SELECT * FROM  ouvrageparlangue ";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;
