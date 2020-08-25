@@ -16,7 +16,7 @@ $idOuvrage = isset($_GET['idOuvrage']) ? $_GET['idOuvrage'] : die();
 if ($idOuvrage!=null){
  
   
-    $query = "SELECT * FROM fichecommentaire WHERE idOuvrage=$idOuvrage order by created desc";
+    $query = "SELECT * FROM ficheCommentaire WHERE idOuvrage=$idOuvrage order by created desc";
     $stmt = $conn->prepare( $query );
     $stmt->execute();
     $count = $stmt->rowCount();
