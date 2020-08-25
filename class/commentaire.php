@@ -26,7 +26,7 @@
             return $stmt;
         }
         public function getfichecommentaires(){
-            $sqlQuery = "SELECT * FROM  fichecommentaire order by created desc";
+            $sqlQuery = "SELECT * FROM  ficheCommentaire order by created desc";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;
@@ -34,7 +34,7 @@
         public function getfichecommentairesParOuvrage(){
             $sqlQuery = "SELECT
                        *
-                      FROM fichecommentaire 
+                      FROM ficheCommentaire 
                       WHERE 
                       idOuvrage = 7  ";
 
