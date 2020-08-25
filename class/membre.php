@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "membre";
+        private $db_table = "Membre";
 
         // Columns
         public $nom;

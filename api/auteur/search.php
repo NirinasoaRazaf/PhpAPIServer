@@ -16,7 +16,7 @@ $wordToSearch=$data->wordToSearch;
 if ($wordToSearch!=null){
  
   
-    $query = "SELECT * FROM auteur WHERE nomAuteur LIKE '%$wordToSearch%' OR nationalite LIKE '%$wordToSearch%'";
+    $query = "SELECT * FROM Auteur WHERE nomAuteur LIKE '%$wordToSearch%' OR nationalite LIKE '%$wordToSearch%'";
     $stmt = $conn->prepare( $query );
     $stmt->execute();
     $count = $stmt->rowCount();

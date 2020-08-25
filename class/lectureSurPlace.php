@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "lectureSurPlace";
+        private $db_table = "LectureSurPlace";
 
         // Columns
         public $idLectureSurPlace;

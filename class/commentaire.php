@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "commentaire";
+        private $db_table = "Commentaire";
 
         // Columns
         public $idGenre;

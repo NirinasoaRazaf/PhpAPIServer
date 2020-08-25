@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "favori";
+        private $db_table = "Favori";
 
         // Columns
         public $idGenre;

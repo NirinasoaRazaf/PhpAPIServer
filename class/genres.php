@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "genre";
+        private $db_table = "Genre";
 
         // Columns
         public $idGenre;

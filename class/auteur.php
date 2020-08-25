@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "auteur";
+        private $db_table = "Auteur";
 
         // Columns
         public $idAuteur;

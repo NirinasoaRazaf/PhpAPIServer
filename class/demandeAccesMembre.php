@@ -5,7 +5,7 @@
         private $conn;
 
         // Table
-        private $db_table = "demandeAccesMembre";
+        private $db_table = "DemandeAccesMembre";
 
         // Columns
         public $idDemandeAccesMembre;
