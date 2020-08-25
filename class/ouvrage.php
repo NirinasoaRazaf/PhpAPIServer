@@ -147,7 +147,7 @@
             $sqlQuery = "SELECT
                         *
                         FROM
-                        ficheOuvrage
+                        ficheouvrage
                     WHERE 
                     idAuteur = ?
                    ";
@@ -186,7 +186,7 @@
         $sqlQuery = "SELECT
                     *
                     FROM
-                    ficheOuvrage
+                    ficheouvrage
                 WHERE 
                 idOuvrage = ?
                 LIMIT 0,1";
