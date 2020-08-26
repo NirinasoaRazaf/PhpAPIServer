@@ -64,6 +64,7 @@
                     SET
                     idMembre = :idMembre, 
                     idOuvrage = :idOuvrage,
+                    checked=:checked,
                     created = :created
 
                     
@@ -74,10 +75,12 @@
             // sanitize
             $this->idMembre=htmlspecialchars(strip_tags($this->idMembre));
             $this->idOuvrage=htmlspecialchars(strip_tags($this->idOuvrage));
+            $this->checked=htmlspecialchars(strip_tags($this->checked));
             $this->created=htmlspecialchars(strip_tags($this->created));
         
             // bind data
             $stmt->bindParam(":idMembre", $this->idMembre);
+            $stmt->bindParam(":checked", $this->checked);
             $stmt->bindParam(":idOuvrage", $this->idOuvrage);
              $stmt->bindParam(":created", $this->created);
 
@@ -107,6 +110,7 @@
             $this->idFavori = $dataRow['idFavori'];
             $this->idMembre = $dataRow['idMembre'];
             $this->idOuvrage = $dataRow['idOuvrage'];
+            $this->checked = $dataRow['checked'];
              $this->created = $dataRow['created'];
 
     
@@ -133,6 +137,7 @@
             $this->idGenre = $dataRow['idGenre'];
             $this->nomGenre = $dataRow['nomGenre'];
             $this->description = $dataRow['description'];
+            $this->checked = $dataRow['checked'];
             $this->created = $dataRow['created'];
 
     
@@ -143,7 +148,7 @@
             $sqlQuery = "UPDATE
                         ". $this->db_table ."
                     SET
-                        message = :message
+                        checked = :checked
                         
                     WHERE 
                     idFavori = :idFavori";
@@ -153,14 +158,14 @@
             $this->idMembre=htmlspecialchars(strip_tags($this->idMembre));
             $this->idOuvrage=htmlspecialchars(strip_tags($this->idOuvrage));
             $this->idFavori=htmlspecialchars(strip_tags($this->idFavori));
-            
+            $this->checked=htmlspecialchars(strip_tags($this->checked));
             $this->created=htmlspecialchars(strip_tags($this->created));
         
             // bind data
             $stmt->bindParam(":idMembre", $this->idMembre);
             $stmt->bindParam(":idOuvrage", $this->idOuvrage);
             $stmt->bindParam(":idFavori", $this->idFavori);
-          
+            $stmt->bindParam(":checked", $this->checked);
             $stmt->bindParam(":created", $this->created);
         
             if($stmt->execute()){
