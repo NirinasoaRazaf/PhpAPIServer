@@ -37,6 +37,12 @@
             $stmt->execute();
             return $stmt;
         }
+        public function getNombreouvrage(){
+            $sqlQuery = "SELECT * FROM nombreOuvrage";
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+        }
         public function getFicheOuvrages(){
             $sqlQuery = "SELECT * FROM  ficheouvrage order by created desc";
             $stmt = $this->conn->prepare($sqlQuery);
