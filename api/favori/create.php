@@ -17,6 +17,7 @@
     
     $item->idMembre = $data->idMembre;
     $item->idOuvrage = $data->idOuvrage;
+    $item->checked = $data->checked;
     $item->created = date('Y-m-d H:i:s');
      
     if($item->addFavori()){
