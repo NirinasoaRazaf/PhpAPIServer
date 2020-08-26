@@ -31,6 +31,12 @@
             $stmt->execute();
             return $stmt;
         }
+        public function topfavori(){
+            $sqlQuery = "SELECT * FROM  topFavori order by nombre desc limit 3";
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+        }
         public function getficheFavoriParMembre(){
             $sqlQuery = "SELECT
                        *
