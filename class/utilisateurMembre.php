@@ -32,6 +32,12 @@
             $stmt->execute();
             return $stmt;
         }
+        public function getUM(){
+            $sqlQuery = "SELECT * FROM ficheUM";
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+        }
 
         // CREATE
         public function addUtilisateurMembre(){
