@@ -26,6 +26,12 @@
             $stmt->execute();
             return $stmt;
         }
+        public function getNombreutilisateurmembre(){
+            $sqlQuery = "SELECT * FROM nombreUtilisateurMembre";
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+        }
 
         // CREATE
         public function addUtilisateurMembre(){
