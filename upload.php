@@ -7,7 +7,7 @@ header("Access-Control-Allow-Methods: PUT, GET, POST");
 
 $response = array();
 $upload_dir = 'uploads/';
-$server_url = 'http://localhost/PhpAPI';
+$server_url = 'http://phpapiserver.herokuapp.com';
 
 if($_FILES['avatar'])
 {
