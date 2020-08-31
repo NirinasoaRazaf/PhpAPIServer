@@ -23,22 +23,22 @@ if ($wordToSearch!=null){
     if($count == 0){
         echo json_encode(array("message" => "Could not find data."));
     }else{
-      
+        $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
             $e = array(
-                "idMembre" =>  $item->idMembre,
-                "nom" => $item->nom,
-                "prenom" => $item->prenom,
-                "adresse" => $item->adresse,
-                "filiere" => $item->filiere,
-                "cin" => $item->cin,
-                "delivreA" => $item->delivreA,
-                "telephone" => $item->telephone,
-                "domaine" => $item->domaine,
-                "email" => $item->email,
-                "dateNaissance" => $item->dateNaissance,
-                "photo" => $item->photo,
-                "codeBarre" => $item->codeBarre,
-                "created" => $item->created
+                "idMembre" => $dataRow['idMembre'],
+                "nom" =>  $dataRow['nom'],
+                "prenom" =>  $dataRow['prenom'],
+                "adresse" =>  $dataRow['adresse'],
+                "filiere" =>  $dataRow['filiere'],
+                "cin" =>  $dataRow['cin'],
+                "delivreA" =>  $dataRow['delivreA'],
+                "telephone" =>  $dataRow['telephone'],
+                "domaine" =>  $dataRow['domaine'],
+                "email" =>  $dataRow['email'],
+                "dateNaissance" =>  $dataRow['dateNaissance'],
+                "photo" =>  $dataRow['photo'],
+                "codeBarre" => $dataRow['codeBarre'],
+                "created" =>  $dataRow['created']
          
 
            );
