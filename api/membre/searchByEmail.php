@@ -16,7 +16,7 @@ $wordToSearch=$data->wordToSearch;
 if ($wordToSearch!=null){
  
   
-    $query = "SELECT * FROM Membre WHERE email=$wordToSearch";
+    $query = "SELECT * FROM Membre WHERE email='$wordToSearch'";
     $stmt = $conn->prepare( $query );
     $stmt->execute();
     $count = $stmt->rowCount();
