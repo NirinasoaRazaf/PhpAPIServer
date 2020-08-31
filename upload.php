@@ -7,7 +7,11 @@ header("Access-Control-Allow-Methods: PUT, GET, POST");
 
 $response = array();
 $upload_dir = 'uploads/';
+
 $server_url = 'url diso';
+
+//$server_url = 'https://github.com/NirinasoaRazaf/PhpAPIServer/';
+
 
 if($_FILES['avatar'])
 {
