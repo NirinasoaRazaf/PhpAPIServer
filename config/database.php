@@ -1,9 +1,9 @@
 <?php 
     class Database {
-        private $host = "sql12.freemysqlhosting.net";
-        private $database_name = "sql12362178";
-        private $username = "sql12362178";
-        private $password = "bK3jZusRsE";
+        private $host = "bpagzq63hjirvjmu4et1-mysql.services.clever-cloud.com";
+        private $database_name = "bpagzq63hjirvjmu4et1";
+        private $username = "uc6xfxyyckvxlw6v";
+        private $password = "dQ11M9g1lHk2Rb8T9HuG";
 
         public $conn;
 
