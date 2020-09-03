@@ -16,7 +16,7 @@ $wordToSearch=$data->wordToSearch;
 if ($wordToSearch!=null){
  
   
-    $query = "SELECT * FROM membre WHERE
+    $query = "SELECT * FROM Membre WHERE
      nom LIKE '%$wordToSearch%' OR email LIKE '%$wordToSearch%'   
     OR prenom LIKE '%$wordToSearch%'  OR telephone LIKE '%$wordToSearch%' 
     OR idMembre LIKE '%$wordToSearch%' OR cin LIKE '%$wordToSearch%'
