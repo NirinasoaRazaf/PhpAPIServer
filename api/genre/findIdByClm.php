@@ -31,7 +31,8 @@
     }
       
     else{
-        http_response_code(404);
-        echo json_encode("Genre not found.");
+        //http_response_code(404);
+        echo json_encode(array("message" => "Genre not found."));
+     
     }
 ?>
