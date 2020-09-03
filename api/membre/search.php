@@ -52,20 +52,20 @@ if ($wordToSearch!=null){
        
              extract($row);
             $e = array(
-                "idMembre" => $dataRow['idMembre'],
-                "nom" =>  $dataRow['nom'],
-                "prenom" =>  $dataRow['prenom'],
-                "adresse" =>  $dataRow['adresse'],
-                "filiere" =>  $dataRow['filiere'],
-                "cin" =>  $dataRow['cin'],
-                "delivreA" =>  $dataRow['delivreA'],
-                "telephone" =>  $dataRow['telephone'],
-                "domaine" =>  $dataRow['domaine'],
-                "email" =>  $dataRow['email'],
-                "dateNaissance" =>  $dataRow['dateNaissance'],
-                "photo" =>  $dataRow['photo'],
-                "codeBarre" => $dataRow['codeBarre'],
-                "created" =>  $dataRow['created']
+                "idMembre" => $idMembre,
+                "nom" =>  $nom,
+                "prenom" =>  $prenom,
+                "adresse" =>  $adresse,
+                "filiere" =>  $filiere,
+                "cin" =>  $cin,
+                "delivreA" =>  $delivreA,
+                "telephone" =>  $telephone,
+                "domaine" =>  $domaine,
+                "email" =>  $email,
+                "dateNaissance" =>  $dateNaissance,
+                "photo" =>  $photo,
+                "codeBarre" => $codeBarre,
+                "created" =>  $created
          
 
            );
