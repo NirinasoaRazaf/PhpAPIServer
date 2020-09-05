@@ -16,7 +16,7 @@ $nomAuteur = isset($_GET['nomAuteur']) ? $_GET['nomAuteur'] : die();
 if ($nomAuteur!=null){
  
   
-    $query = "SELECT * FROM ficheouvrage WHERE nomAuteur=$nomAuteur";
+    $query = "SELECT * FROM ficheouvrage WHERE nomAuteur='$nomAuteur'";
     $stmt = $conn->prepare( $query );
     $stmt->execute();
     $count = $stmt->rowCount();
