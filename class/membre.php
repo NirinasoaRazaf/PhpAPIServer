@@ -29,7 +29,7 @@
 
         // GET ALL
         public function getMembres(){
-            $sqlQuery = "SELECT * FROM " . $this->db_table . "";
+            $sqlQuery = "SELECT * FROM " . $this->db_table . " order by created desc";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;
