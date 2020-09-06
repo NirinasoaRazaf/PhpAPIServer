@@ -41,7 +41,9 @@
                 "codeBarre" => $codeBarre,
                 "created" => $created,
                 "photo" => $photo,
-                "idAuteur" => $idAuteur
+                "idAuteur" => $idAuteur,
+                "langue" => $langue,
+
             );
 
             array_push($ouvrageArr, $e);
