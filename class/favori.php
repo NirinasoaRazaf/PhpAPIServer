@@ -25,6 +25,7 @@
             $stmt->execute();
             return $stmt;
         }
+      
         public function getficheFavoris(){
             $sqlQuery = "SELECT * FROM  ficheFavori order by created desc";
             $stmt = $this->conn->prepare($sqlQuery);
@@ -97,6 +98,28 @@
         }
 
         // READ single
+        public function getnombreFavoriParMembre(){
+            $sqlQuery = "SELECT
+                       *
+                      FROM
+                      nombreFavoriParMembre
+                    WHERE 
+                    idMembre = ?
+                    LIMIT 0,1";
+
+            $stmt = $this->conn->prepare($sqlQuery);
+
+            $stmt->bindParam(1, $this->idMembre);
+
+            $stmt->execute();
+
+            $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
+            $this->idMembre = $dataRow['idMembre'];
+            $this->nombre = $dataRow['nombre'];
+         
+
+    
+        } 
         public function getSingleFavori(){
             $sqlQuery = "SELECT
                        *
