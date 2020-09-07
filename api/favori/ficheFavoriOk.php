@@ -25,6 +25,7 @@ if ($idMembre!=null){
     }else{
         $auteurArr = array();
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+            $nombre = $row['nombre'];
             $idFavori = $row['idFavori'];
             $idMembre = $row['idMembre'];
             $idOuvrage = $row['idOuvrage'];
@@ -38,6 +39,7 @@ if ($idMembre!=null){
        
              extract($row);
             $e = array(
+                "nombre" => $nombre,
                 "idFavori" => $idFavori,
                 "idMembre" => $idMembre,
                 "idOuvrage" => $idOuvrage,
