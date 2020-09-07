@@ -26,8 +26,8 @@
         extract($row);*/
         $e = array(
            
-            "idMembre" => $item->$idMembre,
-            "nombre" => $item->$nombre
+            "idMembre" => $item->idMembre,
+            "nombre" => $item->nombre
                
         
         );
