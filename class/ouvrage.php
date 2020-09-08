@@ -122,6 +122,7 @@
             $this->codeBarre=htmlspecialchars(strip_tags($this->codeBarre));
             $this->created=htmlspecialchars(strip_tags($this->created));
             $this->photo=htmlspecialchars(strip_tags($this->photo));
+            $urlimage=urldecode($this->photo);
         
             // bind data
             $stmt->bindParam(":idAuteur", $this->idAuteur);
@@ -140,7 +141,7 @@
             $stmt->bindParam(":description", $this->description);
             $stmt->bindParam(":codeBarre", $this->codeBarre);
             $stmt->bindParam(":created", $this->created);
-            $stmt->bindParam(":photo", $this->photo);
+            $stmt->bindParam(":photo", $urlimage);
             
         
             if($stmt->execute()){
